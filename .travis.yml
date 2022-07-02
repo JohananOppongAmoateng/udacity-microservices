@@ -20,7 +20,7 @@ script:
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag udagram-api-feed johananoa/udagram-api-feed:v1
   - docker tag udagram-api-user johananoa/udagram-api-user:v1
-  - docker tag udagram-frontend johananoa/udagram-frontend:local
+  - docker tag udagram-frontend:local johananoa/udagram-frontend:local
   - docker tag reverseproxy johananoa/reverseproxy:v1
   
  
